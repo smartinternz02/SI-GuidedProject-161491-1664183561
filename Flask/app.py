@@ -28,11 +28,11 @@ def predict():
     print(prediction)
    
     if (prediction == 0):
-       return render_template("index.html",prediction_text ="Not a potential customer")
+       return render_template("notimp.html",prediction_text ="Not a potential customer")
     elif (prediction == 1):
-       return render_template("index.html",prediction_text = "Potential customer")
+       return render_template("imp.html",prediction_text = "Potential customer")
     else:
-       return render_template("index.html",prediction_text = "Highly potential customer")
+       return render_template("moreimp.html",prediction_text = "Highly potential customer")
      # showing the prediction results in a UI
 if __name__=="__main__":
     
